@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BasecampMart Vendor Onboarding</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f5;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 12px 0 4px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #1e90ff;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0074d9;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>BasecampMart Vendor Onboarding</h2>
+
+  <form action="/api/vendors" method="POST">
+    <label for="businessName">Business Name</label>
+    <input type="text" id="businessName" name="businessName" required>
+
+    <label for="vendorType">Vendor Type</label>
+    <input type="text" id="vendorType" name="vendorType" required>
+
+    <label for="gstin">GSTIN</label>
+    <input type="text" id="gstin" name="gstin" required>
+
+    <label for="pan">PAN</label>
+    <input type="text" id="pan" name="pan" required>
+
+    <label for="contactPerson">Contact Person</label>
+    <input type="text" id="contactPerson" name="contactPerson" required>
+
+    <label for="contactEmail">Contact Email</label>
+    <input type="email" id="contactEmail" name="contactEmail" required>
+
+    <label for="contactPhone">Contact Phone</label>
+    <input type="text" id="contactPhone" name="contactPhone" required>
+
+    <label for="referralSource">Referral Source (optional)</label>
+    <input type="text" id="referralSource" name="referralSource">
+
+    <button type="submit">Submit Vendor</button>
+  </form>
+
+</body>
+</html>
